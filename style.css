@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.start{
+  height: 100vh;
+  background:
+    linear-gradient(rgba(255,165,0,0.5), rgba(255,200,120,0.5)),
+    url("hero-bg.jpg");
+    
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display:flex;
+  justify-content: center; 
+  align-items: center;
+  text-align: center;
+}
+
+.content h1{
+    font-size:60px;
+}
+.content p{
+    margin:10px 0;
+}
+.content .scroll{
+    margin-top:30px;
+}
+.scroll{
+    animation: moveUpDown 2s ease 0s infinite ;
+}
+@keyframes moveUpDown{
+    0%{transform: translate(0);}
+    50%{transform:translateY(10px)}
+    100%{transform:translate(0);}
+}
+
+.head{
+    color:#E67E22;
+}
+.goddess{
+    color:#E67E22;
+}
+
+.down{
+    margin-top:70px;
+}
+p{
+    opacity:0.8;
+}
+/* Content */
+.cards{
+    margin-top:20px;
+    margin-left:15px;
+    display:flex;
+    flex-wrap: wrap;
+}
+.card{
+    margin:20px;
+}
+.card-text{
+    color:#E67E22;
+}
+
+ .custom-card{
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+.custom-card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+/* Important */
+ .img-wrapper{
+    overflow: hidden;
+}
+
+.custom-card img{
+    transition: transform 0.4s ease;
+}
+
+.custom-card:hover img{
+    transform: translateY(10px) scale(1.05);
+} 
+
+footer{
+    text-align: center;
+    height:70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup{
+    display:none;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+    z-index:1000;
+}
+
+.close-btn{
+    border:none;
+    font-size:20px;
+    margin-left:95%;
+    background: none;
+}
